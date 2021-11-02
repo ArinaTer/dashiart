@@ -1,0 +1,21 @@
+{
+  "name": "dashiart",
+  "version": "0.0.0",
+  "authors": [
+    "Artem Terehin <a.terehin@nobrand.team>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.7"
+  }
+}

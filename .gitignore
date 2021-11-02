@@ -1,0 +1,30 @@
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Project files #
+##########################
+build/
+
+# Gulp files #
+##########################
+node_modules/
+
+# Bower files #
+##########################
+bower_components/
+
+# Bash scripts #
+######################
+*.sh
+
+# Apache files #
+##########################
+logs/
+
+# PHPStorm files #
+##########################
+.idea/

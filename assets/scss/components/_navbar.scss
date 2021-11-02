@@ -1,0 +1,96 @@
+/**
+ * Navbar
+ */
+
+.navbar {
+	padding-top: 30px;
+	min-height: auto;
+	border: none;
+	
+	// TODO: Edit bootstrap variables for show navbar toogle without 'display:block' propery.
+	&-toggle {
+		display: block !important;
+		position: relative;
+		float: none;
+		border: none;
+		border-radius: 0;
+		margin: 0;
+		padding: 0 0 0 38px;
+		font-size: $font-size-small;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: $base-letter-spacing;
+
+		&:after,
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			height: 3px;
+			background-color: $brand-primary;
+			transition: all 0.3s;
+		}
+		&:after {
+			top: 6px;
+			width: 25px;
+		}
+		&:before {
+			top: 12px;
+			width: 16px; 
+		}
+
+		&.__white {
+			&:after,
+			&:before {
+				background-color: #fff;
+			} 
+		}
+	}
+
+	&-brand {
+		display: inline-block;
+		float: none;
+		margin: 0 !important;
+		padding: 0;
+		height: auto;
+		font-weight: 600;
+		font-size: $font-size-small;
+		font-family: $font-family-sans-serif;
+		line-height: inherit;
+
+		a {
+			color: inherit;
+		}
+	}
+
+	&_langs {
+		float: right;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-size: $font-size-small;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: $base-letter-spacing;
+
+		li {
+			float: left;
+			margin-left: 18px;
+		}
+	}
+
+	&-default {
+		.navbar_langs {
+			color: rgba($gray-lighter, 0.3);
+
+			a {
+				color: $navbar-default-link-color;
+			}
+		}
+	}
+
+	&-fixed-top {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}

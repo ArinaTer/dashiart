@@ -1,0 +1,48 @@
+/**
+ * Footer
+ */
+
+.footer {
+	padding-bottom: 78px;
+	color: #898989;
+	font-size: 12px;
+
+	&_nav {
+		padding: 0;
+		margin: 0 0 45px;
+		list-style: none;
+		text-align: justify;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: $font-size-small;
+		letter-spacing: $base-letter-spacing;
+
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 100%;
+		}
+
+		li {
+			display: inline-block;
+		}
+
+		a {
+			color: inherit;
+		}
+	}
+
+	&_dev {
+		margin: 0;
+	}
+
+	&_copy {
+		margin: 0;
+		text-align: center;
+	}
+
+	.socials {
+		float: right;
+		margin-right: -23px;
+	}
+}

@@ -1,0 +1,49 @@
+/**
+ * Video
+ */
+
+.video {
+  position: relative;
+
+  video {
+    width: 100%;
+    vertical-align: top;
+    opacity: .2;
+    transition: all 0.3s;
+  }
+
+  &_entry {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
+    transform: translate(-50%, -50%);
+  }
+
+  &_play {
+    cursor: pointer;
+  }
+
+  &_title {
+    margin: 8px 0 12px;
+  }
+
+  &_time {
+    color: $brand-primary;
+    font-size: $font-size-small;
+    letter-spacing: $base-letter-spacing;
+  }
+
+  &.__playing {
+    video {
+      opacity: 1;
+    }
+
+    .video_entry {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

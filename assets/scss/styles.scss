@@ -1,0 +1,45 @@
+// Custom variables
+@import "utils/variables";
+@import "bootstrap/variables";
+
+// Bootstrap variables and mixins
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Bootstrap reset and dependencies
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+
+// Bootstrap core CSS
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+
+// Bootstrap components
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+
+// Bootstrap utility classes
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+
+// Base
+@import "base/fonts";
+@import "base/base";
+
+// Layout
+@import "layout/section";
+@import "layout/footer";
+
+// Components
+@import "components/icons";
+@import "components/navbar";
+@import "components/logo";
+@import "components/scroll";
+@import "components/news";
+@import "components/video";
+@import "components/socials";
+@import "components/instagram";
+@import "components/btn";
+@import "components/form";

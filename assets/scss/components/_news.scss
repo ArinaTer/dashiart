@@ -1,0 +1,32 @@
+/**
+ * News
+ */
+
+.news {
+	padding: 13px 13px 24px;
+	background-color: $gray-darker;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	&_title {
+		padding: 43px 18px 16px;
+
+		h3 {
+			margin: 0;
+			height: 100px;
+			color: $gray-light;
+			font-size: $font-size-base;
+			line-height: inherit;
+			overflow: hidden;
+		}
+	}
+
+	&_date {
+		padding: 0 18px;
+		color: $brand-primary;
+		font-size: $font-size-small;
+	}
+}

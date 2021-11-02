@@ -1,0 +1,110 @@
+/**
+ * Form
+ */
+
+.form {
+	&-group {
+		position: relative;
+
+		&.__justified {
+			text-align: justify;
+
+			&:after {
+				content: '';
+				display: inline-block;
+				width: 100%;
+			}
+		}
+	}
+
+	&-control {
+		padding-left: 0;
+		padding-right: 0;
+		border-width: 0 0 1px 0;
+		font-size: $font-size-large;
+		font-family: $font-family-serif;
+
+		&:focus,
+		&:valid {
+			box-shadow: none;
+
+			& + label {
+				font-size: 12px;
+				top: -15px;
+			}
+		}
+
+		& + label {
+			position: absolute;
+			top: 24px;
+			color: #424242;
+			pointer-events: none;
+			transition: all 0.3s;
+		}
+	}
+
+	textarea.form-control {
+		position: relative;
+		padding: 0;
+		height: 225px;
+		border-bottom: 0;
+		line-height: 75px;
+		background: url(../img/bg/textarea-row.png) 0 0 repeat;
+		resize: none;
+	}
+
+	input[type="checkbox"] {
+		position: absolute;
+		left: -9999px;
+
+		& + label {
+			position: relative;
+			padding-left: 47px;
+			color: $gray;
+			font-family: $font-family-serif;
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: -4px;
+				left: 0;
+				width: 31px;
+				height: 31px;
+				border-radius: 30px;
+				border: 2px solid $gray;
+			}
+			&:before {
+				content: '';
+				display: none;
+				position: absolute;
+				top: 8px;
+				left: 12px;
+				width: 7px;
+				height: 7px;
+				border-radius: 7px;
+				background-color: $gray-lighter;
+			}
+		}
+
+		&:checked {
+			& + label {
+				color: #898989;
+
+				&:after {
+					border-color: $brand-primary;
+				}
+				&:before {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.checkbox-inline {
+		padding-left: 0;
+	}
+
+	&_footer {
+		text-align: center;
+	}
+}
